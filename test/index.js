@@ -5,22 +5,18 @@ var expect = require('expect.js')
 
 describe('Objectify', function () {
   var objectify = new Objectify();
-  it('should be of type Objectify', function () {
-    expect(objectify).to.be.an(Objectify);
-  });
-
   it('should have a create method', function () {
-    expect(_.isFunction(objectify.create)).to.be(true);
+    expect(_.isFunction(Objectify.create)).to.be(true);
   });
 
   describe('create()', function () {
     describe('the schema parameter', function () {
       it('should be a string', function () {
-        objectify.create('./test/schemas/personSchema.json');
+        Objectify.create('./test/schemas/personSchema.json');
       });
 
       it('should be an object', function () {
-        objectify.create({});
+        Objectify.create({});
       });
     });
 
@@ -34,7 +30,7 @@ describe('Objectify', function () {
         });
 
         it('should return an object', function () {
-          var result = objectify.create(personSchema);
+          var result = Objectify.create(personSchema);
           expect(personSchema.type).to.be('object');
           _.isObject(result);
         });
