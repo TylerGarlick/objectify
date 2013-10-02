@@ -1,4 +1,4 @@
-objectify
+Objectify
 =========
 
 Given a JSON schema like this...  
