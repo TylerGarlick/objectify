@@ -45,3 +45,11 @@ billy = {
 };
 ```
 
+Then validate.... using json-schema wrapper...  
+
+```js
+var isValid = Objectify.validate(schema, billy);
+isValid = false // lastName is required
+````
+
+
