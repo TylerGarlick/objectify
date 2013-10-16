@@ -32,6 +32,7 @@
   "dependencies": {
     "json-schema": "~0.2.2",
     "lodash": "~2.2.0",
-    "dbc.js": "~1.0.1"
+    "dbc.js": "~1.0.1",
+    "cocktail": "~0.4.3"
   }
 }
