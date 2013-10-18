@@ -12,7 +12,7 @@ Cocktail.mix(Objectify, {
 });
 
 
-Objectify.create = function (schema, defaults) {
+Objectify.build = function (schema, defaults) {
   var self = this;
 
   if (_.isObject(schema)) {
