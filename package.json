@@ -35,6 +35,7 @@
     "dbc.js": "~1.0.1",
     "cocktail": "~0.4.6",
     "validator": "~3.2.1",
-    "mocha": "~1.13.0"
+    "mocha": "~1.13.0",
+    "underscore.string": "~2.3.3"
   }
 }
