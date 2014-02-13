@@ -1,38 +1,40 @@
 {
-    "name": "objectify",
-    "version": "0.0.1",
-    "description": "Given a json schema create an object",
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://TylerGarlick@github.com/TylerGarlick/objectify"
-    },
-    "keywords": [
-        "objects",
-        "json",
-        "schema",
-        "json",
-        "schema",
-        "json",
-        "object",
-        "creation"
-    ],
-    "author": "Tyler Garlick",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/TylerGarlick/objectify/issues"
-    },
-    "devDependencies": {
-        "mocha": "~1.13.0",
-        "expect.js": "~0.2.0"
-    },
-    "dependencies": {
-        "json-schema": "~0.2.2",
-        "lodash": "~2.2.0",
-        "dbc.js": "~1.0.1",
-        "cocktail": "~0.4.3"
-    }
+  "name": "objectify",
+  "version": "0.0.1",
+  "description": "Given a json schema create an object",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://TylerGarlick@github.com/TylerGarlick/objectify"
+  },
+  "keywords": [
+    "objects",
+    "json",
+    "schema",
+    "json",
+    "schema",
+    "json",
+    "object",
+    "creation"
+  ],
+  "author": "Tyler Garlick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylerGarlick/objectify/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "expect.js": "~0.2.0"
+  },
+  "dependencies": {
+    "json-schema": "~0.2.2",
+    "lodash": "~2.2.1",
+    "dbc.js": "~1.0.1",
+    "cocktail": "~0.4.6",
+    "validator": "~3.2.1",
+    "mocha": "~1.13.0"
+  }
 }
