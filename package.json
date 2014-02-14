@@ -36,6 +36,7 @@
     "cocktail": "~0.4.6",
     "validator": "~3.2.1",
     "mocha": "~1.13.0",
-    "underscore.string": "~2.3.3"
+    "underscore.string": "~2.3.3",
+    "minioc": "~0.2.0"
   }
 }
