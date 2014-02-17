@@ -31,8 +31,8 @@ describe('Objectify', function () {
   describe('Types', function () {
     describe('Stereotype', function () {
       it('should exists as a prototypal function', function () {
-        expect(Types.Stereotype).to.be.a.func;
         var kind = new Types.Stereotype({});
+        expect(Types.Stereotype).to.be.a.func;
         expect(kind).to.be.ok();
         expect(kind).to.be.a(Types.Stereotype);
       });
@@ -40,8 +40,8 @@ describe('Objectify', function () {
 
     describe('ObjectMetadata', function () {
       it('should exists as a prototypal function', function () {
-        expect(Types.ObjectMetadata).to.be.a.func;
         var metadata = new Types.ObjectMetadata('special', {});
+        expect(Types.ObjectMetadata).to.be.a.func;
         expect(metadata).to.be.ok();
         expect(metadata).to.be.a(Types.ObjectMetadata);
       });
@@ -55,12 +55,9 @@ describe('Objectify', function () {
       it('should make the name the type formatted', function () {
         var metadata = new Types.ObjectMetadata("MeSpecialType");
         expect(metadata).to.be.ok();
-        console.log(metadata.type);
-        expect(metadata.type).to.equal('meSpecialType');
-
+        expect(metadata.type).to.equal('mespecialtype');
       });
     });
   });
-
 
 });

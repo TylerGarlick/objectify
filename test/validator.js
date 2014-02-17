@@ -10,6 +10,12 @@ describe('Validator', function () {
     expect(validator).to.be.ok();
   });
 
+  describe('.ioc', function () {
+    it('should be setup by default', function(){
+      expect(validator.ioc).to.be.ok();
+    });
+  });
+
   describe("methods", function () {
     describe("#validate()", function () {
       it('should have a validate function', function () {
