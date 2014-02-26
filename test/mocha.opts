@@ -3,4 +3,3 @@
 --recursive
 --ui bdd
 --reporter spec
---watch
