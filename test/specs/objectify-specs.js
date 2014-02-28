@@ -1,50 +1,43 @@
 "use strict";
-var objectify = require('../../')
-	, expect = require('expect.js')
-	;
+var objectify = require('../../');
 
-describe('Objectify Api', function () {
-
-	describe('Api Functions', function () {
-
+describe('Objectify', function () {
+	describe('Functions', function () {
 		describe('#create(spec, defaults)', function () {
-
 			it('should have a create() function', function () {
-				expect(objectify.create({})).to.be.a.func;
+				objectify.create.should.be.a.Function;
 			});
-
 			it('should require a schema object', function () {
-				expect(function () {
+				(function () {
 					objectify.create();
-				}).to.throwError(/Schema is required/);
+				}).should.throw();
 			});
-
 		});
 
 		describe('#validate(obj, spec)', function () {
-
-			it('should validate an empty object and an empty spec', function(){
-				expect(objectify.validate({}, {})).to.be.ok();
+			it('should validate an empty object and an empty spec', function () {
+				var result = objectify.validate({}, {});
+				result.should.be.true;
 			});
-
 			it('should require a schema', function () {
-
-				expect(function(){
+				(function () {
 					objectify.validate({}, null);
-				}).to.throwError(/Schema is required/);
-
-			});
-		});
-
-		describe('#register(spec, defaults)', function(){
-			it('should be able to register a spec', function(){
-
+				}).should.throw();
 			});
 		});
 	});
 
-	describe('Types', function(){
+	describe('Properties', function () {
+		describe('stereotypes', function () {
+			describe('all', function () {
+				it('should have no registrations by default', function () {
+					objectify.stereotypes.all().should.be.empty;
+				});
+			});
+		});
+	});
 
-		expect(objectify.Schema).to.be.a.func;
+	describe('Types', function () {
+		objectify.Schema.should.be.a.Function;
 	});
 });

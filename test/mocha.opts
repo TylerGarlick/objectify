@@ -1,4 +1,4 @@
---require expect.js
+--require should
 --colors true
 --recursive
 --ui bdd
