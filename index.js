@@ -1,1 +1,1 @@
-exports = module.exports = require('./lib/objectify');
+exports = module.exports = require('./lib');
